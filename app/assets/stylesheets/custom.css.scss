@@ -1,2 +1,37 @@
+//$navbar-default-bg: #14C4FF;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: black;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.container .jumbotron {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.jumbotron {
+  background-image: asset-url('palms.jpg');
+  background-size: cover;
+  height: 450px;
+}
+
+.jumbotron h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
