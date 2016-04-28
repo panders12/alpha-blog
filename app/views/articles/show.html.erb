@@ -1,6 +1,7 @@
 <h2 align="center"><%= @article.title %> </h2>
 
 <div class="well col-xs-8 col-xs-offset-2">
+
   <%= simple_format(@article.description) %>
   
   <%= link_to 'Edit article', edit_article_path(@article), class: "btn btn-xs btn-primary" %>
