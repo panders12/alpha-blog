@@ -1,7 +1,13 @@
 <h2 align="center"><%= @article.title %> </h2>
 
 <div class="well col-xs-8 col-xs-offset-2">
-
+  
+  <div align="center">
+    <% if @article.categories.any? %>
+      <p><%= render @article.categories %></p>
+    <% end %>
+  </div>
+  
   <%= simple_format(@article.description) %>
   
   <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
